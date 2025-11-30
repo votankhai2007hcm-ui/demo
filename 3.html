@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web chạy trên điện thoại</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  background:white;
+  width:100%;
+  max-width:420px;
+  padding:20px;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+h1{
+  color:#ff4081;
+  font-size:24px;
+}
+
+p{
+  font-size:16px;
+  line-height:1.6;
+}
+
+button{
+  margin-top:20px;
+  padding:14px;
+  width:100%;
+  border:none;
+  border-radius:16px;
+  background:#ff4081;
+  color:white;
+  font-size:18px;
+}
+
+button:active{
+  transform:scale(0.96);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>📱 Web chạy trên điện thoại</h1>
+  <p>
+    Trang web này:
+    <br>✅ Tự co giãn theo màn hình  
+    <br>✅ Mở được trên mọi điện thoại  
+    <br>✅ Không cần app
+  </p>
+  <button onclick="hello()">Bấm thử nè 💖</button>
+</div>
+
+<script>
+function hello(){
+  alert("Xin chào! Web này chạy ngon trên điện thoại 📱");
+}
+</script>
+
+</body>
+</html>
